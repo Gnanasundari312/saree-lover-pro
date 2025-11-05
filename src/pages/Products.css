@@ -1,0 +1,16 @@
+.products {
+  text-align: center;
+}
+
+.controls {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.saree-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

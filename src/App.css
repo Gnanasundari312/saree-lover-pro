@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f5;
+}
+
+.main-content {
+  min-height: 80vh;
+  padding: 20px;
+}
+
+h2 {
+  color: #e91e63;
+}
+
+.btn {
+  background-color: #e91e63;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c2185b;
+}
