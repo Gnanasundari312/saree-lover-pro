@@ -1,0 +1,100 @@
+.track-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.order-summary {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.order-info div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.value {
+  color: #333;
+}
+
+.status-pill {
+  background-color: #ffcc00;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.delivery-date {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 30px;
+}
+
+.timeline-step {
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.timeline-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -50%;
+  width: 100%;
+  height: 4px;
+  background-color: #ddd;
+  z-index: -1;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #555;
+}
+
+.circle.active {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.step-label {
+  margin-top: 8px;
+  display: block;
+  color: #777;
+}
+
+.step-label.active-text {
+  color: #28a745;
+  font-weight: bold;
+}

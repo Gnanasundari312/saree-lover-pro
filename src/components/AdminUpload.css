@@ -1,0 +1,90 @@
+/* ===== UPLOAD CARD ===== */
+.upload-container {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+
+  /* center */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-title {
+  color: #c2185b;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ===== FORM ===== */
+.form-group {
+  display: grid;
+  gap: 10px;
+
+  /* center + reduce width */
+  width: 60%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.form-group input,
+.form-group button {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* input shape */
+.form-group input {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* SAVE BUTTON */
+.save-btn {
+  background: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.save-btn:hover {
+  background: #e73370;
+}
+
+/* ===== LOGOUT BUTTON ===== */
+.logout-btn {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+  background: #e73370;
+  transform: translateY(-1px);
+}
+
+/* ===== UPLOADED ITEMS ===== */
+.uploaded-box {
+  margin-top: 20px;
+
+  /* center same width as form */
+  width: 60%;
+  max-width: 550px;
+  margin: 20px auto;
+}
+
+.upload-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}

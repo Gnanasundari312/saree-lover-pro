@@ -1,0 +1,119 @@
+.profile-container {
+  background-color: #fde8ef;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background: #ffffff;
+  width: 420px;
+  border-radius: 18px;
+  padding: 25px 28px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.profile-avatar {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: 3px solid #ff2f75;
+  margin-bottom: 10px;
+}
+
+.profile-header h2 {
+  margin: 0;
+}
+
+.profile-tagline {
+  color: gray;
+  font-size: 14px;
+}
+
+.profile-details {
+  margin-top: 18px;
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  color: #444;
+}
+
+.profile-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn-edit,
+.btn-security {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background: #ff4081;
+  color: white;
+}
+
+.btn-security {
+  background: #ffe3eb;
+  color: #ff2f75;
+}
+
+/* ⭐ Edit Profile input style */
+.profile-input {
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  border-radius: 8px;
+  outline: none;
+  width: 55%;
+}
+
+.profile-input:focus {
+  border-color: #ff2f75;
+}
+
+/* ⭐ NEW — ADDRESS SECTION */
+.address-box {
+  background: #fff6fa;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.address-box p {
+  margin: 6px 0;
+}
+
+.address-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.address-box input {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,112 @@
+/* Wishlist card container */
+.wishlist-item {
+  display: flex;
+  gap: 20px;
+  background: #ffe6ec;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wishlist-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Image styling */
+.wishlist-image {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.wishlist-image:hover {
+  transform: scale(1.05);
+}
+
+/* Details container */
+.wishlist-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title styling */
+.wishlist-details h4 {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Paragraph styling */
+.wishlist-details p {
+  margin: 2px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Price styling */
+.wishlist-details p:first-of-type {
+  font-weight: 600;
+  color: #e53935;
+}
+
+/* Buttons container */
+.wishlist-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Remove button */
+.wishlist-details button:first-of-type {
+  background: crimson;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 7px 14px;
+  transition: background 0.2s;
+}
+
+.wishlist-details button:first-of-type:hover {
+  background: #d32f2f;
+}
+
+/* Add to Cart button */
+.wishlist-cart {
+  background: #ffcc00;
+  color: black;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 7px 14px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.wishlist-cart:hover {
+  background: #fdd835;
+  transform: translateY(-2px);
+}
+
+/* Empty wishlist message */
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 18px;
+  font-weight: 500;
+  background: #fff0f5;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: background 0.3s;
+}
+
+.empty:hover {
+  background: #ffe6ec;
+}

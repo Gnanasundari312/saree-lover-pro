@@ -1,25 +1,44 @@
+
+/* NAVBAR WRAPPER */
 .navbar {
-  background-color: #e91e63;
-  padding: 15px 30px;
+  background: #e91e63;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+/* CENTERED CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
+
+/* FLEX LAYOUT */
+.nav-inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  color: white;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
+  justify-content: space-between;
   gap: 20px;
 }
 
+/* LOGO */
+.logo {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+/* MAIN LINKS */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 22px;
+}
+
 .nav-links a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -27,3 +46,103 @@
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+/* TRACK BOX (CENTER LIKE MEESHO) */
+.track-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.track-box input {
+  border: none;
+  outline: none;
+  min-width: 160px;
+}
+
+.track-box button {
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.track-box button:hover {
+  background: #c41452;
+}
+
+/* RIGHT SIDE BUTTON GROUP */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* CART, LOGIN, SIGNUP BUTTONS */
+.btn-light {
+  background: white;
+  color: #e91e63;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ADMIN BUTTON */
+.btn-admin {
+  background: #fff;
+  color: #e91e63;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* DROPDOWN */
+.admin-dropdown {
+  position: relative;
+}
+
+.admin-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 170px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.12);
+  z-index: 20;
+}
+
+.admin-dropdown:hover .admin-menu {
+  display: block;
+}
+
+.admin-menu a {
+  display: block;
+  padding: 6px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.admin-menu a:hover {
+  background: #f2f2f2;
+}
+

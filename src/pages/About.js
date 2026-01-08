@@ -18,8 +18,6 @@
 
 import React from "react";
 import "./About.css";
-// import logo from "../assets/logo.png";
-
 const About = () => {
   return (
     <div className="about-container">

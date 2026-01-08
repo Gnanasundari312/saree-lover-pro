@@ -1,0 +1,78 @@
+.dashboard-container {
+  padding: 25px;
+  background: #fff6fb;
+  border-radius: 12px;
+}
+
+.dashboard-title {
+  margin-bottom: 15px;
+  color: #c2185b;
+}
+
+.item-card {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 15px;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid #ffd4e6;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.item-card img {
+  border-radius: 10px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.item-info {
+  font-size: 14px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn-edit {
+  background: #ff9ac8;
+}
+
+.btn-delete {
+  background: #ff5c8d;
+  color: white;
+}
+
+.btn-save {
+  background: #4caf50;
+  color: white;
+}
+
+.btn-cancel {
+  background: #aaa;
+  color: white;
+}
+
+.edit-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.edit-inputs input {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}

@@ -15,9 +15,12 @@
 
 
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";   // ✅ Add this
 import "./Contact.css";
 
 const Contact = () => {
+  const navigate = useNavigate();  // ✅ Add this
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,7 +34,11 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you for contacting Saree Lover! We'll get back to you soon.");
+
+    // 🔥 Instead of alert → Redirect to Thank You page
+    navigate("/thank-you");
+
+    // Optional: Clear form after submit
     setFormData({ name: "", email: "", message: "" });
   };
 
@@ -39,18 +46,23 @@ const Contact = () => {
     <div className="contact-container">
       {/* Header */}
       <section className="contact-header">
-        <h1>Contact <span>Saree Lover</span></h1>
+        <h1>
+          Contact <span>Saree Lover</span>
+        </h1>
         <p>
-          We’d love to hear from you! Whether you have a question about our sarees,
-          orders, or anything else — our team is ready to help.
+          We’d love to hear from you! Whether you have a question about our
+          sarees, orders, or anything else — our team is ready to help.
         </p>
       </section>
 
       {/* Main Content */}
       <div className="contact-content">
+
         {/* Contact Form */}
         <div className="contact-form">
           <h2>Get in Touch</h2>
+
+          {/* 👉 Call handleSubmit here */}
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -60,6 +72,7 @@ const Contact = () => {
               onChange={handleChange}
               required
             />
+
             <input
               type="email"
               name="email"
@@ -68,6 +81,7 @@ const Contact = () => {
               onChange={handleChange}
               required
             />
+
             <textarea
               name="message"
               placeholder="Your Message"
@@ -76,6 +90,7 @@ const Contact = () => {
               rows="5"
               required
             ></textarea>
+
             <button type="submit">Send Message</button>
           </form>
         </div>
@@ -83,7 +98,11 @@ const Contact = () => {
         {/* Contact Info */}
         <div className="contact-info">
           <h2>Reach Us</h2>
-          <p><strong>📍 Address:</strong> Saree Lover, Kaliyanoor Village, Kanchipuram, Tamil Nadu, India</p>
+
+          <p>
+            <strong>📍 Address:</strong> Saree Lover, Kaliyanoor Village,
+            Kanchipuram, Tamil Nadu, India
+          </p>
           <p><strong>📞 Phone:</strong> +91 9789547223</p>
           <p><strong>📧 Email:</strong> supportgs@sareelover.in</p>
           <p><strong>🕐 Timings:</strong> Mon - Sat | 9:00 AM - 7:00 PM</p>
